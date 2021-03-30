@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Template · Bootstrap v5.0</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/blog/"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="./blog.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="first-page">
+      <!--Navbar-->
+      <header class="navbar-top bd-navbar navbar-expand-lg">
+        <nav class="container">
+          <div class="container-fluid">
+            <div class="blog-header py-2">
+              <div
+                class="row flex-nowrap justify-content-between align-items-center navbar-cont"
+              >
+                <div class="col-2 pt-1">
+                  <img class="food-logo" src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTMuNTU0IDUxMy41NTQiIGhlaWdodD0iNTEyIiB2aWV3Qm94PSIwIDAgNTEzLjU1NCA1MTMuNTU0IiB3aWR0aD0iNTEyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnPjxwYXRoIGQ9Im00NzguODgzIDQwMC42OTRoLTQ0NC4yMTJjLTE5LjE0OCAwLTM0LjY3MS0xNS41MjItMzQuNjcxLTM0LjY3MXYtNi44MjZjMC0xOS4xNDggMTUuNTIzLTM0LjY3MSAzNC42NzEtMzQuNjcxaDQ0NC4yMTNjMTkuMTQ4IDAgMzQuNjcxIDE1LjUyMyAzNC42NzEgMzQuNjcxdjYuODI2Yy0uMDAxIDE5LjE0OS0xNS41MjMgMzQuNjcxLTM0LjY3MiAzNC42NzF6IiBmaWxsPSIjZTk0NDQ0Ii8+PHBhdGggZD0ibTUxMy41NTIgMzU5LjE5M3Y2LjgyOGMwIDE5LjE1Mi0xNS41MTYgMzQuNjc4LTM0LjY2OCAzNC42NzhoLTIwLjI4OGMxOS4xNTIgMCAzNC42NjgtMTUuNTI2IDM0LjY2OC0zNC42Nzh2LTYuODI4YzAtMTkuMTQyLTE1LjUxNi0zNC42NjgtMzQuNjY4LTM0LjY2OGgyMC4yODhjMTkuMTUyIDAgMzQuNjY4IDE1LjUyNyAzNC42NjggMzQuNjY4eiIgZmlsbD0iI2Q4MzEzMSIvPjxwYXRoIGQ9Im00NzguODgzIDQwMC42OTRoLTIyMi4xMDYtMjIyLjEwNnMtMTUuMzE5IDczLjk3MSA3MS44NTUgMTAzLjA3MWMxNC45MzMgNC45ODUgMzAuNTIzIDcuMzA2IDQ2LjE1NyA3LjMwNmgxMDQuMDk1IDEwNC4wOTVjMTUuNjM0IDAgMzEuMjI0LTIuMzIxIDQ2LjE1Ny03LjMwNiA4Ny4xNzItMjkuMSA3MS44NTMtMTAzLjA3MSA3MS44NTMtMTAzLjA3MXoiIGZpbGw9IiNmZTk3MzgiLz48cGF0aCBkPSJtNDA3LjAyOCA1MDMuNzYzYy0xNC45MzcgNC45OS0zMC41MjUgNy4zMTQtNDYuMTU1IDcuMzE0aC0yMy41MzJjMTUuNjQgMCAzMS4yMjgtMi4zMjQgNDYuMTY1LTcuMzE0IDg3LjE2NS0yOS4xIDcxLjg0Ni0xMDMuMDYzIDcxLjg0Ni0xMDMuMDYzaDIzLjUzMmMwLS4wMDEgMTUuMzIgNzMuOTYzLTcxLjg1NiAxMDMuMDYzeiIgZmlsbD0iI2ZlODYwYSIvPjxwYXRoIGQ9Im00NzkuNjk2IDMzOC4zMzZjMCAxNy4zMS0yMC4xMTQgMjYuNjk0LTMzLjQ4NyAxNS43MDMtNS40OTctNC41MTgtMTEuOTg5LTguMDk4LTIyLjI3OC04LjA5OC0yNy44NzggMC0yNy44NzggMjIuMDgzLTU1Ljc1NyAyMi4wODNzLTI3Ljg3OS0yMi4wODMtNTUuNzU4LTIyLjA4M2MtMjcuODc4IDAtMjcuODc4IDIyLjA4My01NS43NTYgMjIuMDgzLTI3Ljg3NyAwLTI3Ljg3Ny0yMi4wODMtNTUuNzU1LTIyLjA4My0yNy44NzkgMC0yNy44NzkgMjIuMDgzLTU1Ljc1OCAyMi4wODMtMjcuODc4IDAtMjcuODc4LTIyLjA4My01NS43NTYtMjIuMDgzLTEwLjI4NCAwLTE2Ljc3NCAzLjU3OC0yMi4yNyA4LjA5NC0xMy4zNzQgMTAuOTkxLTMzLjQ4OCAxLjYwOS0zMy40ODgtMTUuNzAydi00MC45NjdoNDQ2LjA2MXY0MC45N3oiIGZpbGw9IiNiYmVjNmMiLz48cGF0aCBkPSJtNDc5LjcgMjk3LjM2OHY0MC45NjljMCAxNi4xOTgtMTcuNjEzIDI1LjQ1My0zMC44MjUgMTcuNTcxIDUuODM2LTMuNDA5IDEwLjAzLTkuNjU5IDEwLjAzLTE3LjU3MXYtNDAuOTY5eiIgZmlsbD0iI2EyZTYyZSIvPjxwYXRoIGQ9Im0zMy44NTggMjY0LjU0MXYzMy4xM2g0Ny44MmM5Ljk0OCAwIDE4LjAxMyA4LjA2NSAxOC4wMTMgMTguMDEzdjk1LjQxNmMwIDEyLjcxOSAxMC4zMTEgMjMuMDMgMjMuMDMgMjMuMDMgMTIuNzE5IDAgMjMuMDI5LTEwLjMxMSAyMy4wMjktMjMuMDN2LTk1LjQxNmMwLTkuOTQ4IDguMDY1LTE4LjAxMyAxOC4wMTMtMTguMDEzaDMxNS45MzR2LTMzLjEzeiIgZmlsbD0iI2ZlZTQ1YSIvPjxwYXRoIGQ9Im00NTguOTA2IDI2NC41MzloMjAuNzk1djMzLjEyOWgtMjAuNzk1eiIgZmlsbD0iI2ZlZGYzMCIvPjxwYXRoIGQ9Im00NzguODgzIDI2Ni44MDloLTQ0NC4yMTJjLTE5LjE0OCAwLTM0LjY3MS0xNS41MjItMzQuNjcxLTM0LjY3MXYtNi44MjZjMC0xOS4xNDggMTUuNTIzLTM0LjY3MSAzNC42NzEtMzQuNjcxaDQ0NC4yMTNjMTkuMTQ4IDAgMzQuNjcxIDE1LjUyMyAzNC42NzEgMzQuNjcxdjYuODI2Yy0uMDAxIDE5LjE0OS0xNS41MjMgMzQuNjcxLTM0LjY3MiAzNC42NzF6IiBmaWxsPSIjOWU1NTI4Ii8+PHBhdGggZD0ibTUxMy41NTIgMjI1LjMxdjYuODI4YzAgMTkuMTUyLTE1LjUxNiAzNC42NjgtMzQuNjY4IDM0LjY2OGgtMjAuMjg4YzE5LjE1MiAwIDM0LjY2OC0xNS41MTYgMzQuNjY4LTM0LjY2OHYtNi44MjhjMC0xOS4xNDItMTUuNTE2LTM0LjY2OC0zNC42NjgtMzQuNjY4aDIwLjI4OGMxOS4xNTIuMDAxIDM0LjY2OCAxNS41MjcgMzQuNjY4IDM0LjY2OHoiIGZpbGw9IiM5MDRkMjQiLz48cGF0aCBkPSJtMjU2Ljc3NyAyLjQ4M2MtMTczLjE2NSAyLjUwNi0yMzEuMzQ2IDk2LjQzOS0yNTAuNTUzIDE1MS4wMTgtNi41ODIgMTguNzAyIDcuNDUxIDM4LjI3NCAyNy4yNzcgMzguMjc0aDIyMy4yNzYgMjIzLjI3NGMxOS45NzMgMCAzMy44MjUtMTkuNzY5IDI3LjE2NC0zOC41OTktMTkuMzIzLTU0LjYyNi03Ny42MTYtMTQ4LjE5Mi0yNTAuNDM4LTE1MC42OTN6IiBmaWxsPSIjZmU5NzM4Ii8+PHBhdGggZD0ibTQ4MC4wNTIgMTkxLjc3N2gtMi40NjljNi43MjUtNy41IDkuNDkzLTE4LjQxOSA1Ljc0NC0yOS4wMzgtMTkuMzI4LTU0LjYzNi03Ny42Mi0xNDguMTk1LTI1MC40NDItMTUwLjY5NS00NC43MDkuNjQtODEuNzYzIDcuMzg2LTExMi40NDMgMTcuOTc0IDM0Ljc5Mi0xNS45ODEgNzkuMzM1LTI2LjcxNCAxMzYuMzM2LTI3LjU0IDE3Mi44MjIgMi41MSAyMzEuMTE1IDk2LjA3IDI1MC40NDIgMTUwLjY5NSA2LjY1MiAxOC44MzItNy4yMDEgMzguNjA0LTI3LjE2OCAzOC42MDR6IiBmaWxsPSIjZmU4NjBhIi8+PGc+PGc+PHBhdGggZD0ibTE4NS4yOTkgODEuODljLTEuMjA0IDAtMi40MjUtLjI5MS0zLjU1OS0uOTAzLTMuNjQ0LTEuOTY5LTUuMDAxLTYuNTItMy4wMzItMTAuMTY0bDYuNzIxLTEyLjQzNmMxLjk2OS0zLjY0NCA2LjUyLTUuMDAxIDEwLjE2NC0zLjAzMnM1LjAwMSA2LjUyIDMuMDMyIDEwLjE2NGwtNi43MjEgMTIuNDM2Yy0xLjM1NiAyLjUxLTMuOTM4IDMuOTM1LTYuNjA1IDMuOTM1eiIgZmlsbD0iI2U1NzkxNyIvPjwvZz48Zz48cGF0aCBkPSJtMjU2LjY4NCA4Mi43MzljLTQuMTQyIDAtNy41LTMuMzU4LTcuNS03LjV2LTE0LjEzNmMwLTQuMTQyIDMuMzU4LTcuNSA3LjUtNy41czcuNSAzLjM1OCA3LjUgNy41djE0LjEzNmMwIDQuMTQyLTMuMzU4IDcuNS03LjUgNy41eiIgZmlsbD0iI2U1NzkxNyIvPjwvZz48Zz48cGF0aCBkPSJtMzI4LjI1NSA4MS43ODZjLTIuNTg3IDAtNS4xMDQtMS4zNC02LjQ5NS0zLjczOWwtNy4wOTItMTIuMjI5Yy0yLjA3OC0zLjU4My0uODU4LTguMTcyIDIuNzI1LTEwLjI1czguMTcyLS44NTggMTAuMjUgMi43MjVsNy4wOTIgMTIuMjI5YzIuMDc4IDMuNTgzLjg1OCA4LjE3Mi0yLjcyNSAxMC4yNS0xLjE4NC42ODgtMi40NzcgMS4wMTQtMy43NTUgMS4wMTR6IiBmaWxsPSIjZTU3OTE3Ii8+PC9nPjwvZz48L2c+PC9zdmc+" />
+                </div>
+                <!--Hamburger Button-->
+                <button
+                  class="menu col-sm-1 m-0"
+                  onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                  aria-label="Main Menu"
+                >
+                  <svg width="36px" height="36px" viewBox="0 0 100 100">
+                    <path
+                      class="line line1"
+                      d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                    />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path
+                      class="line line3"
+                      d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                    />
+                  </svg>
+                </button>
+
+                <div
+                  class="col-5 col-sm-8 d-flex justify-content-end align-items-center"
+                >
+                  <a class="btn btn-sm reg-up-btn" href="#">Registrate</a>
+                  <a class="btn btn-sm sign-up-btn" href="#">Iniciar sesion</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="nav-scroller mx-3 mt-1 px-3 mb-2">
+        <nav class="nav d-flex justify-content-between">
+          <a class="link-text p-2 link-secondary" href="#">#rapanui</a>
+          <a class="link-text p-2 link-secondary" href="#">#helado</a>
+          <a class="link-text p-2 link-secondary" href="#">#pizza </a>
+          <a class="link-text p-2 link-secondary" href="#">#sushi </a>
+          <a class="link-text p-2 link-secondary" href="#">#hamburguesa </a>
+          <a class="link-text p-2 link-secondary" href="#">#empanadas </a>
+          <a class="link-text p-2 link-secondary" href="#">#mcdonalds </a>
+          <a class="link-text p-2 link-secondary" href="#">#kfc </a>
+          <a class="link-text p-2 link-secondary" href="#">#freddo</a>
+        </nav>
+      </div>
+      <!--Header-->
+          <div id="map-container-google-2" class="mx-0 px-0">
+            <div class="container d-flex justify-content-center my-4 ">
+        <div class="row">
+          <h1 class="header mx-0 m-3">¿Tienes hambre? Estás en el lugar indicado</h1>
+        </div>
+      </div>
+      <!--Ubicacion-->
+      <div class="container-fuid d-flex justify-content-center">
+        <div class="col-10 col-sm-8 text-center mb-3">
+          <form class="d-flex">
+            <input
+              class="form-control me-2 searchbar"
+              type="search"
+              placeholder="Ingresá tu dirección..."
+              aria-label="Search"
+            />
+            <button class="search-btn btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+      <!--Google map-->
+          <div id="map-container-google-2" class="mx-0 px-0">
+            <div class="google-maps container-fluid ">
+          <div id="map-container-google-2" class="mx-0 px-0">
+            <div class="">
+          <div id="map-container-google-2" class="mx-0 px-0">
+            <iframe
+              class="google-maps-map col-12"
+              src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer container-fluid d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 mx-0 px-0 footer-div">
+            <ul class="list">
+              <li><a href="">Quiénes somos</a></li>
+              <li><a href="">Términos y Condiciones</a></li>
+              <li><a href="">Privacidad</a></li>
+              <li><a href="">Regista tu negocio</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <div class="badge col-6 my-2 d-flex align-items-center">
+            <h5>Descarga la app</h5>
+            <a href="https://play.google.com/store?hl=es_AR&gl=US"><img
+              class="android-badge"
+              src="./assets/google-play-badge.png"
+              alt=""
+            /></a>
+            
+            <a href="https://www.apple.com/shop"><img class="apple-badge" src="./assets/app-store-badges/apple-app-store-badge.svg" alt=""></a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
