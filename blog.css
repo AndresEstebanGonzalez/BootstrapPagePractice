@@ -1,20 +1,32 @@
 /* stylelint-disable selector-list-comma-newline-after */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-body {
+
+html {
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: linear-gradient(180deg, #f8cb35 72%, #05a357 100%);
+  overflow-x: hidden;
 }
 .first-page {
   width: 100vw;
-  height: 119vh;
-  background-image: url("./assets/1123937e5a0b6acd4cdb04ede71aa3a9.svg");
+  height: 100vh;
+  background-image: linear-gradient(180deg, #f8cb35 72%, #05a357 100%);
   background-size: cover;
   font-family: "Roboto" !important;
 }
 /*Navbar*/
-
+.first-sector {
+  margin-top: 17vh;
+  background-image: url("./assets/1123937e5a0b6acd4cdb04ede71aa3a9.svg");
+  background-size: cover;
+}
+.navbar-whole {
+  width: 100vw;
+  margin-top: -17vh;
+  position: fixed;
+  background-color: #f8cb35;
+}
 .reg-up-btn {
   margin-right: 20px;
   padding: 8px 12px 8px 12px !important;
@@ -84,10 +96,45 @@ body {
   height: 64vh !important;
   border-radius: 5px;
 }
+/*Second Sector*/
+.second-sector {
+  width: 100vw;
+  height: 100vh !important;
+  background-color: #fff;
+}
+.second-sector-cont {
+  height: 100%;
+  background-color: #fff !important;
+}
+.second-sector-h {
+  width: 100%;
+  height: 100%;
+}
+.second-sector-r {
+  margin: 0 1rem 0 1rem !important;
+}
+.second-sector-h img {
+  width: 100%;
+}
+.second-sector-h h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.second-sector-h a {
+  color: #000;
+  font-weight: 500;
+}
+.second-sector-food-logo {
+  width: 100%;
+}
+.second-sector-header {
+}
 /*Footer*/
 .footer {
   width: 100vw;
   height: 23vh;
+  position: relative;
+  bottom: 0;
   background-color: #05a357;
 }
 .list {
@@ -194,24 +241,34 @@ body {
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
+  /*Google Maps*/
   .google-maps {
     height: 36% !important;
   }
   .google-maps-map {
     height: 50vh !important;
   }
+  /*Second Sector*/
+  .second-sector-r {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  /*Footer*/
   .list li {
     font-size: 10px;
   }
   .badge {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
   }
   .android-badge {
     width: 115px;
   }
   .apple-badge {
     width: 100px;
+  }
+  footer {
+    position: fixed;
   }
 }
 @media screen and (max-height: 568px) {
