@@ -17,13 +17,13 @@ html {
 }
 /*Navbar*/
 .first-sector {
-  margin-top: 17vh;
+  margin-top: 13vh;
   background-image: url("./assets/1123937e5a0b6acd4cdb04ede71aa3a9.svg");
   background-size: cover;
 }
 .navbar-whole {
   width: 100vw;
-  margin-top: -17vh;
+  margin-top: -13vh;
   position: fixed;
   background-color: #f8cb35;
 }
@@ -132,7 +132,7 @@ html {
 /*Footer*/
 .footer {
   width: 100vw;
-  height: 23vh;
+  height: 26vh;
   position: relative;
   bottom: 0;
   background-color: #05a357;
@@ -287,5 +287,10 @@ html {
   }
   .sign-up-btn {
     display: none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .second-sector {
+    height: 245vh !important;
   }
 }
