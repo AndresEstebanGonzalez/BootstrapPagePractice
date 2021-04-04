@@ -79,8 +79,6 @@ html {
   font-size: 52px;
 }
 /*GoogleMaps*/
-.searchbar {
-}
 .search-btn {
   color: #000 !important;
   background-color: #05a3573b !important;
@@ -127,8 +125,6 @@ html {
 .second-sector-food-logo {
   width: 100%;
 }
-.second-sector-header {
-}
 /*Footer*/
 .footer {
   width: 100vw;
@@ -167,8 +163,6 @@ html {
 @media screen and (max-width: 576px) {
   .food-logo {
     display: none !important;
-  }
-  .searchbar {
   }
   .search-btn {
     display: none !important;
@@ -278,13 +272,6 @@ html {
 }
 
 @media screen and (max-width: 568px) {
-  .food-logo {
-  }
-  .searchbar {
-  }
-  .search-btn {
-    height: ;
-  }
   .sign-up-btn {
     display: none !important;
   }
